@@ -1,0 +1,11 @@
+<!-- ruta: app/src/main/res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    Este es el tema principal para el modo DÍA de tu aplicación.
+    Hereda de un tema base de Material 3.
+    -->
+    <style name="Theme.FORO_S5_PetShopApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Aquí podrías personalizar colores, pero por ahora lo dejamos simple -->
+        <!-- <item name="colorPrimary">@color/purple_500</item> -->
+    </style>
+</resources>
