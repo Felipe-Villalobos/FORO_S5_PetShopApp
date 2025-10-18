@@ -1,2 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!-- ruta: app/src/main/res/values-night/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    Este es el tema principal para el modo NOCHE.
+    Hereda del mismo tema base.
+    -->
+    <style name="Theme.FORO_S5_PetShopApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Aquí podrías personalizar los colores para el modo oscuro -->
+        <!-- <item name="colorPrimary">@color/purple_200</item> -->
+    </style>
+</resources>

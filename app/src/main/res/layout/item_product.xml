@@ -20,17 +20,16 @@
             android:id="@+id/productImageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:scaleType="centerCrop"
             android:contentDescription="@string/product_image_description"
+            android:scaleType="centerCrop"
             tools:src="@tools:sample/avatars" />
 
-        <!-- Este LinearLayout es el que organiza el texto a la derecha de la imagen -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginStart="16dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/productNameTextView"
@@ -39,14 +38,13 @@
                 android:textAppearance="?attr/textAppearanceTitleMedium"
                 tools:text="Nombre del Producto" />
 
-            <!-- ESTE ES EL TEXTVIEW DEL PRECIO QUE FALTABA -->
+            <!-- Este es el TextView del precio. Ya no tiene el 'textColor' que nos daba problemas -->
             <TextView
                 android:id="@+id/productPriceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textAppearance="?attr/textAppearanceBodyLarge"
-                android:textColor="?attr/colorPrimary"
                 tools:text="$99.99" />
         </LinearLayout>
     </LinearLayout>

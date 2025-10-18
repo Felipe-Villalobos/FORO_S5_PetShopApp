@@ -36,28 +36,27 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.androidx.core.ktx)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    // --- Dependencias estándar ---
+    // Core de Android y AppCompat (UI básica)
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
+
+    // Layouts y UI
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
-    // --- Para RecyclerView (listas de productos y mascotas) ---
     implementation("androidx.recyclerview:recyclerview:1.3.2")
 
-    // --- Para cargar imágenes de internet de forma eficiente ---
-    implementation("io.coil-kt:coil:2.6.0") // O Glide si lo prefieres
+    // Navegación (Fragmentos) - Usando la versión estable más reciente
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 
-    // --- Para reproducir video (parte de AndroidX Media3) ---
+    // Carga de imágenes
+    implementation("io.coil-kt:coil:2.6.0")
+
+    // Reproductor de video
     implementation("androidx.media3:media3-exoplayer:1.3.1")
     implementation("androidx.media3:media3-ui:1.3.1")
 
-    // --- Para pruebas (opcional pero recomendado) ---
+    // Dependencias de prueba
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

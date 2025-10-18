@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- ruta: app/src/main/res/layout/activity_video_player.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ui.VideoPlayerActivity">
 
-</LinearLayout>
+    <!--
+    Este es el componente visual de ExoPlayer.
+    Ocupará toda la pantalla y mostrará el video y los controles
+    (play/pausa, barra de progreso, etc.).
+    -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/videoPlayerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

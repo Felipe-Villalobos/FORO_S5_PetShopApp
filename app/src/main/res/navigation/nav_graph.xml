@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ruta: app/src/main/res/navigation/nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_store">
+
+    <!-- Destino para el fragmento de la Tienda -->
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.nrc3319.foro_s5_petshopapp.ui.fragments.StoreFragment"
+        android:label="Tienda"
+        tools:layout="@layout/fragment_store" />
+
+    <!-- Destino para el fragmento de la Galería -->
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.nrc3319.foro_s5_petshopapp.ui.fragments.GalleryFragment"
+        android:label="Galería"
+        tools:layout="@layout/fragment_gallery" />
+
+</navigation>

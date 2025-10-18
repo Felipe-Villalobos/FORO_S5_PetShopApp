@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ruta: app/src/main/res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Tienda" /><!-- Usaremos iconos de placeholder por ahora -->
+
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Galería" /> <!-- Usaremos iconos de placeholder por ahora -->
+
+</menu>
